@@ -1,5 +1,5 @@
 {
-    "name": "boehsermoe/automerge",
+    "name": "git-automerge/php-automerge",
     "description": "CLI tool to auto-merge git branches and tag.",
     "type": "library",
     "license": "MIT",
