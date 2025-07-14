@@ -47,9 +47,9 @@ ln -s vendor/bin/automerge automerge
 vendor/bin/automerge
 ```
 
-## Configuration Example (config.yaml)
+## Configuration Example (automerge-config.yaml)
 
-Create a config.yaml file in your project root with this structure:
+Create a automerge-config.yaml file in your project root with this structure:
 ```yaml
 staging:
   base: main
