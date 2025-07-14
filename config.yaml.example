@@ -1,0 +1,9 @@
+staging:
+  base: main
+  branches:
+    - hotfix/*
+
+feature:
+  base: main
+  branches:
+    - feature/*
