@@ -34,18 +34,17 @@ vendor/bin/automerge
 
 Create a config.yaml file in your project root with this structure:
 ```yaml
-production:
+staging:
   base: main
   branches:
-    - "feature-*"
-    - "bugfix-*"
-  tag_prefix: "prod-"      # Optional; Default is automerge- if empty or false, no prefix used
+    - "bugfix/*"
+  tag_prefix: "prod-"      # Optional; Default is "automerge-" if empty or false, no prefix used
 
-staging:
+feature:
   base: develop
   branches:
-    - "staging-*"
-  # tag_prefix omitted here; no prefix will be used
+    - "feature/*"
+  tag_prefix: false # omitted here; no prefix will be used
 ```
 
 
