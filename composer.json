@@ -21,5 +21,13 @@
     "bin": [
         "bin/automerge.php"
     ],
+    "scripts": {
+        "post-install-cmd": [
+            "[ -L automerge ] || ln -s vendor/bin/automerge automerge"
+        ],
+        "post-update-cmd": [
+            "[ -L automerge ] || ln -s vendor/bin/automerge automerge"
+        ]
+    },
     "minimum-stability": "stable"
 }
