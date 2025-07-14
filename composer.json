@@ -19,7 +19,7 @@
         }
     },
     "bin": [
-        "bin/automerge.php"
+        "bin/automerge"
     ],
     "scripts": {
         "post-install-cmd": [
