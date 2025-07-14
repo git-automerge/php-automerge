@@ -1,7 +1,14 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+if (
+    !includeIfExists(__DIR__ . '/../../../../autoload.php') &&
+    !includeIfExists(__DIR__ . '/../../vendor/autoload.php') &&
+    !includeIfExists(__DIR__ . '/../../../../../../vendor/autoload.php')
+) {
+    fwrite(STDERR, 'Install dependencies using Composer.'.PHP_EOL);
+    exit(1);
+}
 
 use Symfony\Component\Yaml\Yaml;
 
