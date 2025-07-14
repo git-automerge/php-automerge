@@ -20,8 +20,25 @@
 
 Install via Composer:
 
+(Optional) Add post script to create symlink
+```json
+"scripts": {
+  "post-install-cmd": [
+    "[ -L automerge ] || ln -s vendor/bin/automerge automerge"
+  ],
+  "post-update-cmd": [
+    "[ -L automerge ] || ln -s vendor/bin/automerge automerge"
+  ]
+}
+```
+
 ```bash
 composer require boehsermoe/automerge
+```
+
+(Optional) create symlink 
+```
+ln -s vendor/bin/automerge automerge
 ```
 
 ## Usage
