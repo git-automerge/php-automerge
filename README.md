@@ -21,7 +21,7 @@
 Install via Composer:
 
 ```bash
-composer require your-vendor/automerge
+composer require boehsermoe/automerge
 ```
 
 ## Usage
