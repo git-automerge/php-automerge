@@ -33,7 +33,7 @@ vendor/bin/automerge
 ## Configuration Example (config.yaml)
 
 Create a config.yaml file in your project root with this structure:
-```
+```yaml
 production:
   base: main
   branches:
@@ -46,10 +46,10 @@ staging:
   branches:
     - "staging-*"
   # tag_prefix omitted here; no prefix will be used
+```
 
-´´´
 
-The script will:
+## The script will:
 
 - Check your working directory is clean.
 - Fetch all remote branches.
