@@ -33,7 +33,8 @@ Install via Composer:
 ```
 
 ```bash
-composer require boehsermoe/automerge
+composer global require git-automerge/php-automerge
+
 ```
 
 (Optional) create symlink 
